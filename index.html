@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <title>Frontend Mentor | Project tracking intro component</title>
 
 </head>
-<body>
-  Product
-  Features
-  Pricing
-  Login
 
-  New
-  Monograph Dashboard
+<body class="page">
+  <header class="page__header">
+    <nav class="nav__header wrapper wrapper--header">
+      <img src="/img/logo.svg" alt="Monograph logo" class="img img--logo">
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
+      <input type="checkbox" id="a-menuCheckbox" class="a-menuCheckbox">
+      <label for="a-menuCheckbox" class="m-menuToggle" aria-label="Open main menu">
+        <img src="/img/icon-hamburger.svg" alt="hamburger icon"
+            class="img img--hamburger a-menu a-menuOpen">
+        <img src="/img/icon-close.svg" alt="close icon"
+            class="img img--hamburger a-menu a-menuClose">
+      </label>
+      </div>
+      <ul class="menu menu--header m-menu">
+        <li class="menu__item a-menuItem"><a href="#" class="link menu__link a-menuLink">Product</a></li>
+        <li class="menu__item a-menuItem"><a href="#" class="link menu__link a-menuLink">Features</a></li>
+        <li class="menu__item a-menuItem"><a href="#" class="link menu__link a-menuLink">Pricing</a></li>
+        <li class="menu__item a-menuItem"><a href="#" class="link menu__link a-menuLink">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page__content">
+    <article class="hero">
+      <div class="wrapper wrapper--content">
+        <div class="group-text">
+          <span class="title title--accent">New</span>
+          <h3 class="title title--preHeader">Monograph Dashboard
+          </h3>
 
-  Schedule a demo
-  to see a live preview
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">AX-d</a>.
-    </p>
+          <h1 class="title hero__title">
+            Powerful insights into your team
+          </h1>
+          <p class="copy hero__copy">
+            Project planning and time tracking for agile teams
+          </p>
+
+          <a href="#" class="link btn btn--cta">Schedule a demo</a>
+          <p class="copy copy--cta">
+            to see a live preview
+          </p>
+        </div>
+        <img src="/img/illustration-devices.svg" alt="illustration devices" class="img hero__img">
+      </div>
+    </article>
+  </main>
+
+  <footer class="page__footer">
+    <div class="wrapper wrapper--footer">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="link">Frontend
+          Mentor</a>.
+        Coded by <a href="#" class="link">AX-d</a>.
+      </p>
+    </div>
   </footer>
   <script src="/js/main.js"></script>
 </body>
+
 </html>
